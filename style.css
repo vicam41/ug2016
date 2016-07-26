@@ -108,9 +108,7 @@ dd {
 }
 /*-[ Framework ]--------------------*/
 body {
-    font: 14px/1.5 Noto Sans, sans-serif;
     color: #555;
-    background-color: #EBEBEB;
 }
 ::-moz-selection {
     background: #222;
@@ -204,7 +202,6 @@ header {
     float: left;
     margin: 0;
     padding: 0;
-    background: #222;
 }
 #header h1, #header h2 {
     float: left;
@@ -219,20 +216,20 @@ div#regular-header {
     padding: 0;
 }
 #logo a {
-    text-transform: uppercase;
-    float: left;
     line-height: 1;
     color: #222;
+    display: block;
 }
+.image-logo { margin: 0;}
 #header #logo a {
     font-size: 28px;
     color: #fff;
 }
-#logo img { float: left }
+#logo img { margin: 0 auto; }
 .logo-wrap {
-    margin: 49px 0;
+    text-align: center;
+    margin: 30px 0;
     overflow: hidden;
-    float: left;
 }
 #header .logo-wrap {
     padding: 22px 0;
@@ -306,7 +303,7 @@ div.header-social-icons:before {
 .regular_header div#primary-nav {
     float: left;
     width: 100%;
-    border-bottom: 1px solid #eee;
+    background: #F5F5F5;
 }
 #primary-navigation { float: right }
 #primary-navigation .navigation ul ul { width: 200px }
@@ -330,6 +327,8 @@ div.header-social-icons:before {
 .regular_header #secondary-navigation {
     float: left;
     width: 100%;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
 }
 #secondary-navigation .navigation ul ul li { background: #fff }
 #secondary-navigation .navigation ul li:hover, #secondary-navigation .navigation ul .current-menu-item { background: #fff }
@@ -337,9 +336,10 @@ div.header-social-icons:before {
 #secondary-navigation a {
     text-align: left;
     text-decoration: none;
-    padding: 24px 25px;
+    padding: 15px 25px;
     transition: none;
 }
+#secondary-navigation > nav > ul.menu { text-align: center; }
 #secondary-navigation .navigation > ul > .menu-item-has-children > a { padding-right: 38px }
 #secondary-navigation .menu-item-has-children > a:after { right: 22px }
 #primary-navigation a {
@@ -358,7 +358,7 @@ div.header-social-icons:before {
 }
 .navigation ul { margin: 0 auto }
 .navigation ul li {
-    float: left;
+    display: inline-block;
     line-height: 24px;
     position: relative;
     transition: all 0.25s linear;
@@ -539,7 +539,8 @@ a#pull { display: none }
 }
 .post-info {
     display: block;
-    color: #AAAAAA;
+    color: #999;
+    font-size:13px;
     float: left;
     clear: both;
     width: 100%;
@@ -698,7 +699,7 @@ hr {
     position: relative;
 }
 /*-[ Search Form ]------------------*/
-#sidebar .widget.widget_search, #sidebar .widget.mts_subscribe_widget, #sidebar .widget.widget_product_search { background: #222 }
+#sidebar .widget.widget_search, #sidebar .widget.mts_subscribe_widget, #sidebar .widget.widget_product_search { background: #F5F5F5 }
 #sidebar .widget.widget_search h3 { color: #fff }
 #searchform {
     padding: 0;
