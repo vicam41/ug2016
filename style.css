@@ -23,9 +23,11 @@ table {
     border-spacing: 0;
 }
 button, input, select, textarea {
+    font-family: inherit;
     margin: 0;
     font-weight: inherit;
 }
+.shareit { z-index: 1000;}
 :focus { outline: 0 }
 img, video, object {
     max-width: 100%;
@@ -1110,7 +1112,7 @@ footer .container {
     margin: 0 0 30px -6.8%;
     padding: 30px 6.8%;
     min-height: 180px;
-    background-color: #222;
+    background-color: #F5F5F5;
     float: left;
     clear: both;
     width: 100%;
@@ -1119,7 +1121,7 @@ footer .container {
 .postauthor h4 {
     padding-top: 6px;
     padding-bottom: 6px;
-    color: #fff;
+    color: #333;
 }
 .postauthor h5 {
     font-weight: bold;
@@ -1336,7 +1338,7 @@ ol.commentlist {
 }
 .fn {
     line-height: 1.375em;
-    font-weight: bold;
+    font-weight: normal;
 }
 .fn a {
     color: #EE210B;
